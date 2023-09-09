@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.Container{
+    display: inline-block;
+}
+.MainContainer{
+    text-align: center;
+    padding: 10px;
+    background-color: royalblue;
+    margin: 10px;
+    color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+.MainContainer h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}

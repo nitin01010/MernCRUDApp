@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post edit page</title>
+</head>
+<body>
+    <h1>Post edit Page </h1>
+    <%= findnew.id %> <br/> <br/>
+    <%= findnew.username %> <br/><br/>
+    <form method="post" action="http://127.0.0.1:3000/post/<%=findnew.id%>?_method=PATCH">
+        <textarea name="content" placeholder="edit post">
+            <%= findnew.content %>
+        </textarea>
+        <button>update</button>
+    </form>
+    
+</body>
+</html>

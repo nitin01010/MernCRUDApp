@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>All Post</title>
+</head>
+<body>
+    <h1>Quara Post</h1>
+    <% for(post of posts){ %>
+    <div class="Container">
+        <div class="MainContainer">
+            <h3>@<%= post.username %></h3>
+            <p><%= post.content %></p>
+            <a href="http://127.0.0.1:3000/delete/<%= post.id %>" target="_blank">See in All</a>
+            <a href="http://127.0.0.1:3000/post/<%= post.id %>/edit" target="_blank">Edit Post</a>
+            <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
+                <button>delete</button>
+            </form>
+        </div>
+    </div>
+    <% } %>
+    <div>
+    <a href="http://127.0.0.1:3000/new/posts">Create a Post</a>
+    </div>
+</body>
+</html>
+
+    
